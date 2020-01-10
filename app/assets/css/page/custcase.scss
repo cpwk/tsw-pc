@@ -1,0 +1,76 @@
+@import "../color";
+@import "../mixin";
+
+.custcase-page {
+  width: 100%;
+  background: #fff;
+  padding: 0 0 50px 0;
+
+  .inner {
+    width: 1380px;
+    margin: 0 auto;
+
+    .case-info {
+      width: 100%;
+      margin: 0 auto;
+      padding: 70px 0 60px 0;
+      color: $font-default;
+      font-weight: 400;
+
+      .title {
+        float: left;
+        width: 500px;
+        height: 30px;
+        line-height: 30px;
+        text-align: right;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+
+      .info {
+        float: left;
+        width: 680px;
+        margin-left: 120px;
+
+        .subtitle {
+          position: relative;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 50px;
+          height: 50px;
+          margin-bottom: 10px;
+
+          &:after {
+            position: absolute;
+            content: '';
+            width: 40px;
+            height: 2px;
+            background: $gold;
+            left: 0;
+            top: 48px;
+          }
+
+        }
+
+        .line {
+          width: 100%;
+          line-height: 30px;
+          color: #4c4948;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      padding-bottom: 40px;
+      line-height: 25px;
+
+      img {
+        max-width: 1380px !important;
+      }
+    }
+  }
+
+}
